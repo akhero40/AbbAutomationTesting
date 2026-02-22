@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+    <test name="SmokeTest" parallel="classes" thread-count="2">
+        <classes>
+            <class name="gettingStarted.TestNgTest">
+                <methods >
+
+                    <include name="testLogin"/>
+                    <include name="testCreateUser"/>
+                    <include name="loggingOff"/>
+
+
+                </methods>
+
+            </class>
+            <class name="gettingStarted.TestNgTest2"/>
+        </classes>
+    </test>
+    
+    
+</suite>
